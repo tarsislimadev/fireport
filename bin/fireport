@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+
+'use strict';
+
+process.title = 'fireport';
+
+require('../dist').runCommandLine(process.argv.slice(2));
