@@ -1,48 +1,43 @@
 {
-  "name": "fireport",
-  "version": "0.0.1",
-  "description": "A new firewall",
-  "homepage": "http://fireport.tarsis.cc",
-  "author": "Tarsis (http://tarsis.cc)",
-  "license": "MIT",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "engines": {
-    "node": ">=12.0.0"
-  },
-  "bin": {
-    "fireport": "./bin/fireport"
-  },
-  "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w",
-    "lint": "tslint --project tsconfig.json",
-    "prepublishOnly": "npm run build",
-    "clear": "rm -rf ./dist"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint"
-    }
-  },
-  "files": [
-    "bin",
-    "dist"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tarsisdelima/fireport.git"
-  },
-  "bugs": {
-    "url": "https://github.com/tarsisdelima/fireport/issues"
-  },
-  "keywords": [
-    "firewall"
-  ],
-  "dependencies": {},
-  "devDependencies": {
-    "@types/node": "~10.17.13",
-    "tslint": "^5.12.1",
-    "typescript": "~3.8.2"
-  }
+	"name": "fireport",
+	"version": "0.0.1",
+	"description": "A new firewall",
+	"homepage": "http://fireport.tarsis.cc",
+	"author": "Tarsis (http://tarsis.cc)",
+	"license": "MIT",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"engines": {
+		"node": ">=12.0.0"
+	},
+	"bin": {
+		"fireport": "./bin/fireport"
+	},
+	"scripts": {
+		"build": "tsc",
+		"watch": "tsc -w",
+		"lint": "tslint --project tsconfig.json",
+		"prepublishOnly": "npm run build",
+		"clear": "rm -rf ./dist"
+	},
+	"files": [
+		"bin",
+		"dist"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/tarsisdelima/fireport.git"
+	},
+	"bugs": {
+		"url": "https://github.com/tarsisdelima/fireport/issues"
+	},
+	"keywords": [
+		"firewall"
+	],
+	"dependencies": {},
+	"devDependencies": {
+		"@types/node": "~10.17.13",
+		"tslint": "^5.12.1",
+		"typescript": "~3.8.2"
+	}
 }
